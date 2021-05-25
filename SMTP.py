@@ -41,8 +41,8 @@ if recv1[:3] != '250':
 
 # Info for username and password
 # SMTP Authentication is part of Extended SMTP, which is initiated with the EHLO command
-username =  "19021293@vnu.edu.vn" # the username for your server
-password = "Hung2712" # the password for your server
+username =  /your username here/ # the username for your server
+password =  /your password here/ # the password for your server
 base64_str = ("\x00" + username + "\x00" + password).encode()
 base64_str = base64.b64encode(base64_str)
 authMsg = "AUTH PLAIN ".encode() + base64_str + "\r\n".encode()
